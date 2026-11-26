@@ -1,0 +1,64 @@
+//NPM Understanding
+npm -> node package manager where we find all the nodes packages all together.
+npm se jo download krte hai wo hota hai package..
+//npm is a space where we find many files inside it which we can download and use as per need 
+installing and uninstalling anything basics & advanced 
+//install -> npm install <package-name>
+//uninstall -> npm uninstall <package-name>
+
+//to install a particular version of that package we can write ->
+npm install <package-name>@<version>
+
+//understanding node modules
+->dependencies : dependencies means folder containing packages and there dependencies..
+->devdepndencies -> the dependencies that will help in the phase of development...
+Only used during the dev phase.
+deploy ke time me use nhi hoga.
+//to save any package in the dev dependencies we may have to run the command->
+//npm i nodemon --save-dev
+//we dont make any dependency dev dependency until and unless it is required to be installed ...
+//npm start , npm test
+start and test is already present in the table.
+//npm run is used before those that had contain a made name.
+like npm run chacha here chacha is a made up name..
+//Express.js
+//Introduction to express
+->express js is a npm package.
+->framework :framework is a flow of doing particular tasks with whatever we want to do in between it.
+-> express manages all tasks from requesting to responsing in the server.
+//setting up basic express application
+//routing
+//middleware
+//request and response handling
+//error handling
+//eg - facebook had user requested for something to the server.
+//middleware is something that is found before routes .
+middleware is something before routes that will perform any task.
+so when server will accept the request so before reaching to the required routes they will perform some tasks , so they will be called as a middleware 
+
+
+Form Handling and working with forms.
+handle backend process of forms and making sure data coming from the users side.
+
+//Cookies
+//session-cookie
+ok so server had sended you the required data image to the person 
+//cookies means browser saved me
+//session - session means how work is going to double.
+/login se logout krne tk ko hi session khete hai
+
+//the data we write in the frontend it will store in the browser
+//the data we enter in the frontend like in login form or anything it will store in the server when converted to some other language randomly.
+
+//so the data we sent to the server is not readable because it converts it into a new randomly generated code.
+
+
+//setting up ejs for ejs pages
+//install ejs from npm 
+//setup ejs as a view engine
+->setting up public static files
+//dynamic routing
+dynamic routing means making routes for any specific type.
+eg - /profile/harsh
+/profile/harshit
+/profile/vansh

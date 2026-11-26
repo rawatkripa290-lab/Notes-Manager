@@ -1,0 +1,38 @@
+const express = require('express')
+const app = express();
+app.use(express.json()); //it will be readable for json format
+app.use(express.urlencoded({extended:true}))
+//readable for other urlencoded one
+//helps in checking out the form data
+// app.use(function(req,res,next){
+//   console.log('middleware chala');
+//   next(); //forward the request when once done
+// }); 
+// app.use(function(req,res,next){
+//   console.log('dusra middleware');
+//   next();
+// })
+// is a middleware
+//express() is a function and once it is written it will execute it.
+//express js jojo kr skte hai sb app ke andr hai
+//routes creation
+// app.use(function(err,req,res,neext){
+//   res.send("This is profile page")
+// })
+// app.get('/',(req,res)=>{
+//   res.send("Hello world")
+// })
+// app.get('/profile',(req,res)=>{
+//   res.send("Champion uska coach")
+// })
+// app.get('/profile',(req,r,next)=>{
+//   return next(new Error("Something went wrong"))
+// })
+// app.use((err,req,res,next)=>{
+//   res.status(500).send("Something went wrong , we donot have any ideas") //frontend
+// })
+//app.get(route,requestHanlder) /requestHandler is a middleware
+app.listen(3000,(req,res)=>{
+  console.log("Listening at port : 3000")
+})
+//so here we start our backend
